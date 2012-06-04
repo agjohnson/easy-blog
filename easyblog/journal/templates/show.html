@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load markup %}
+
+{% block title %}{{ entry.title|safe }}{% endblock %}
+
+{% block main %}
+<div id='entry'>
+  <h1 class='title'>{{ entry.title }}</h1>
+  
+  <div class='meta'>
+    From
+    <span class='meta-tags'>
+  {{ entry.category.name }}
+    </span>
+    <span class='meta-date'>on {{ entry.date }}</span>
+  </div>
+
+  <div class='body'>
+  {{ entry.body|textile }}
+  </div>
+
+  <div class='meta'>
+  {% if entry.tags.all %}
+    <div class='meta-tags'>
+      <span class='title'>Tagged:</span>
+    {% for tag in entry.tags.all %}
+      <span class='tag'>{{ tag }}</span>
+    {% endfor %}
+    </div>
+  {% endif %}
+  </div>
+
+</div>
+{% endblock %}
+

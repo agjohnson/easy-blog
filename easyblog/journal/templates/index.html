@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load markup %}
+
+{% block title %}Contents{% endblock %}
+
+{% block main %}
+<div id='toc'>
+  {% for entry in toc %}
+  <div class='entry'>
+    <h1><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h1>
+    <p>
+      {{ entry.excerpt }}
+    </p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
+

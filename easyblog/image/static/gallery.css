@@ -1,0 +1,18 @@
+/* gallery styles */
+
+#entry > .body .gallery-three-wide {
+    overflow: auto;
+    margin: 1.6em 0em;
+}
+
+#entry > .body .gallery-three-wide > img {
+    width: 16em;
+    float: left;
+    margin-left: .25em;
+}
+
+#entry > .body .gallery-three-wide > img:first-child {
+    margin-left: 0em;
+}
+
+

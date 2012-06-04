@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Blah - {% block title %}{% endblock %}</title>
+    <link rel='stylesheet' href='/static/main.css' />
+    <link rel='stylesheet' href='/static/gallery.css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700,400italic' type='text/css'>
+  </head>
+  <body>
+    <div id='content'>
+
+      <div id='nav'>
+      </div>
+
+      <div id='main'>
+        {% block main %}{% endblock %}
+      </div>
+
+      <div id='footer'>
+      </div>
+
+    </div>
+  </body>
+</html>
