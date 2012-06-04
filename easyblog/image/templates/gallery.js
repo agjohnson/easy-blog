@@ -1,9 +1,9 @@
 /* gallery.js */
 
-images={{ images|safe }};
-
 $(document).ready(function () {
-    gallery = $(".gallery-{{ gallery.slug }}");
+    var images={{ images|safe }};
+    
+    var gallery = $(".gallery-{{ gallery.slug }}");
     gallery.addClass("gallery-{{ gallery.style }}")
     
     for (i in images) {
