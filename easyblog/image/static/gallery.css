@@ -8,10 +8,27 @@
 #entry > .body .gallery-three-wide > img {
     width: 16em;
     float: left;
-    margin-left: .25em;
+    margin-left: .5em;
 }
 
 #entry > .body .gallery-three-wide > img:first-child {
+    margin-left: 0em;
+}
+
+
+
+#entry > .body .gallery-two-wide-asym {
+    overflow: auto;
+    margin: 1.6em 0em;
+}
+
+#entry > .body .gallery-two-wide-asym > img {
+    width: 24.25em;
+    float: left;
+    margin-left: .5em;
+}
+
+#entry > .body .gallery-two-wide-asym > img:first-child {
     margin-left: 0em;
 }
 
